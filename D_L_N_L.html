@@ -7,53 +7,62 @@
         <link rel="icon" href="images/drum-emoji.png">
     </head>
     <body>
-<!-- MENU BAR -->
-        <!-- Menu w/anchor links | Socials -->
-        <div id="menubar_top">
-            
-            <div class="socials">
-                <a class="facebook" target="_blank" href="http://facebook.com">
-                    <img class="fb" src="images/placeholders/40x40.png" />
-                </a>
-            </div>
-            <div class="socials">
-                <a class="twitter" target="_blank" href="http://twitter.com">
-                    <img class="tw" src="images/placeholders/40x40.png" />
-                </a>
-            </div>
-            <div class="socials">
-                <a class="instagram" target="_blank" href="http://instagram.com">
-                    <img class="in" src="images/placeholders/40x40.png" />
-                </a>
-            </div>
-            <div class="socials">
-                <a class="youtube" target="_blank" href="http://youtube.com">
-                    <img class="yo" src="images/placeholders/40x40.png" />
-                </a>
-            </div>
-            
         
-            <table id="dropdown_menu">
-                <td>
-                    <div class="submenu">
-                        <img id="menu-logo" src="images/menu.png" />
-                        <div class="dropdown-menu-title">Menu</div>
-                        <ul>
-                            <li><a href="#heading_lessons">Lessons</a></li>
-                            <li><a href="heading_exams">Exams</a></li>
-                            <li><a href="heading_prices">Prices</a></li>
-                            <li><a href="heading_contact">Contact</a></li>
-                        </ul>
-                    </div>
-                </td>
-            </table>
-        </div>
-<!-- HEADER -->        
-        <div id="header">
-            <img src="images/Drum-lessons-logo-streetsign.png" id="logo_img">
-        </div>      
-<!-- NAVIGATION OPTIONS -->
+<!-- MENU BAR -->
+        
+        <!-- Menu w/anchor links | Socials -->
+        <div class="page-container">
+            <div id="menubar_top">
+
+                <div class="socials">
+                    <a class="facebook" target="_blank" href="http://facebook.com">
+                        <img class="fb" src="images/placeholders/40x40.png" />
+                    </a>
+                </div>
+                <div class="socials">
+                    <a class="twitter" target="_blank" href="http://twitter.com">
+                        <img class="tw" src="images/placeholders/40x40.png" />
+                    </a>
+                </div>
+                <div class="socials">
+                    <a class="instagram" target="_blank" href="http://instagram.com">
+                        <img class="in" src="images/placeholders/40x40.png" />
+                    </a>
+                </div>
+                <div class="socials">
+                    <a class="youtube" target="_blank" href="http://youtube.com">
+                        <img class="yo" src="images/placeholders/40x40.png" />
+                    </a>
+                </div>
+
+
+                <table id="dropdown_menu">
+                    <td>
+                        <div class="submenu">
+                            <div class="dropdown-menu-title"><!-- Menu --><img id="menu-logo" src="images/menu.png" /></div>
+                            <ul>
+                                <li><a href="#heading_lessons">Lessons</a></li>
+                                <li><a href="heading_exams">Exams</a></li>
+                                <li><a href="heading_prices">Prices</a></li>
+                                <li><a href="heading_contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </table>
+            </div>
+        </div><!-- Page-container End -->
+        
+<!-- HEADER -->     
+        
+        <div class="page-container">
+            <div id="header">
+                <img src="images/Drum-lessons-logo-streetsign.png" id="logo_img">
+            </div>    
+        </div><!--End Page-container -->    
+
+        <!-- NAVIGATION OPTIONS -->
         <!-- heading_exams content -->       
+        
         <div id="options">
             <a href="#heading_lessons">
                 <div id="option1">
@@ -77,15 +86,58 @@
                 </div>
             </a>
         </div>
+        
 <!-- LESSONS -->
+        
         <!-- Animated selection boxes. Beginners, Advanced, Exams -->
         <div id="heading_lessons">
             <h2>Lessons</h2>
             <a name="heading_lessons"></a>
         </div>
         
-        <div id="lessons_content"></div>
-<!-- PRICES -->        
+        <!-- <div id="lessons_content"></div> -->
+        
+        <div class="page-container">
+            <div id="lesson-selector-bar">
+                <h4 id="beginners">Beginners</h4>
+                <h4 id="advanced">Advanced</h4>
+                <h4 id="exams">Exams</h4>
+            </div>
+            
+            <div class="page-container">
+                <div class="lesson-tab-bar">
+                    
+                    <button class="tablinks" onclick="openLevel(event, 'Beginner')"><h4 id="beginners">Beginners</h4></button>
+                    
+                    <button class="tablinks" onclick="openLevel(event, 'advanced')"><h4 id="advanced">Advanced</h4></button>
+                    
+                    
+                    <button class="tablinks" onclick="openLevel(event, 'exams')"><h4 id="exams">Exams</h4></button>
+                    
+            <!-- Tab content -->
+                    <div id="beginners-content-box" class="tabcontent">
+                    <span class="lesson-content-text">Come and have some really fun lessons.</span>
+                    </div>
+                    
+                    <div id="advanced-content-box" class="tabcontent">
+                    <span class="lesson-content-text">Come and have some really advanced lessons.</span>
+                    </div>
+                    
+                     <div id="exam-content-box" class="tabcontent">
+                    <span class="exam-content-text">Come and have some really inportant exams.</span>
+                    </div>
+                    
+                    
+                    
+                    
+            <!-- <div id="beginners-content-box">
+                <span class="lesson-content-text">Come and have some really fun lessons.</span> -->
+            
+            </div>
+        </div>
+        
+<!-- PRICES -->
+        
          <div id="heading_prices">
             <h2>Prices</h2>
         </div>
@@ -108,9 +160,11 @@
             
             <div id="prices_expl">Prices_expl</div>
             
-        </div>       
+        </div>     
+        
 <!-- CONTACT -->
-         <div id="heading_contact">
+        
+        <div id="heading_contact">
             <h2>Contact</h2>
         </div>
         
@@ -128,7 +182,9 @@
                 </fieldset>        
             </form>        
         </div>
+        
 <!-- FOOTER -->
+        
         <div id="footer">
             <span class="footer-text">Website designed and built by <a href="http://avadesign.co.uk">AVA Design.</a> Copyright 2018 ©.</span>            
         </div>

@@ -42,14 +42,19 @@ body {
     width: 100%;
 }
 
+.page-container {
+    width: 1000px;
+    margin: 0px auto 20px auto;
+    
+}
+
 /* MENU BAR ---> */
 
 #menubar_top {
-    /*background-color: skyblue;*/
+    background-color: skyblue;*/
     width: 1000px;
     height: 50px;
-    margin: 0px auto 20px auto;
-    overflow: inherit;
+    /* margin: 0px auto 20px auto; */
 }
 
 /* +++ Sprite not working +++ */
@@ -73,22 +78,27 @@ body {
 
 /*  SUBMENU  --->  */
 
-.submenu #menu-logo {
+.submenu {
     width: 50px;
-    display:inline-block;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    position:fixed;
-    top: 20;
-    right: 20;
-    
+    display: inline;
+    position:static;
+    float: right;
 }
 
-.dropdown-menu-title {
-    display: block;
-    padding-top: 15px;
-    font-family: 'noto sans', sans-serif;
+#menu-logo {
+    width: 50px;
+    display: inline;
+    margin: 0px;
 }
+
+/* .dropdown-menu-title {
+    display: inline;
+    padding-top: 15px;
+    padding-left: 50px;
+    font-family: 'noto sans', sans-serif;
+    text-align: left;
+}
+*/
 
 #dropdown_menu {
     float: right;
@@ -108,7 +118,7 @@ body {
 
 #dropdown_menu {
     /* background-color: lightsalmon; */
-    text-align: right;
+    text-align: left;
 }
 
 #dd:checked ~ .submenu {
@@ -119,7 +129,7 @@ body {
 
 #header {
     width: 1000px;
-    height: 300px;
+    height: 370px;
     margin: 20px auto 50px auto;
 }
 /* MENU BAR <--- */
@@ -177,6 +187,8 @@ body {
 
 /* OPTIONS <--- */
 
+/* LESSONS ---> */
+
 #heading_lessons {
     width:1000px;
     height: 20px;
@@ -184,16 +196,93 @@ body {
     text-align: center;
 }
 
-#lessons_content {
-    /* margin-top: 20px;
-    margin-bottom: 20px; */
+.lesson-tab-bar h4 {
+    font-family: 'noto sans', sans serif;
+    font-size: 1.5em;
+    color: red;
+    display: inline;
+}
+
+#beginners {
+    display: inline-block;
+    text-align: center; 
+    background-color: aqua;
+    margin: 0px 0px 0px 50px;
+    padding: 0px 100px 0px 100px;
+}
+
+#advanced {
+    display: inline-block;
+    text-align: center; 
+    background-color: yellow;
+    margin: 0px 20px 0px 20px;
+    padding: 0px 100px 0px 100px;
+}
+
+#exams {
+    display: inline-block;
+    text-align: center; 
+    background-color: green;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 100px 0px 100px;
+}
+
+#beginners-content-box{
+    background-color: aqua;
+    width: 1000px;
+    height: 350px;
+    margin: 0px auto 50px auto;
+}
+
+
+/* #lessons_content {
     background-color: palevioletred;
     width: 1000px;
     height: 500px;
     margin: 50px auto 50px auto;
 }
+*/
 
-/* Prices --> */
+/* Lesson Tabs - Add js for full funtion ---> */
+
+.lesson-tab-bar {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.lesson-tab-bar button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.lesson-tab-bar button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.lesson-tab-bar button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+/* LESSONS <--- */
+
+/* PRICES --> */
 
 #heading_prices {
     width:1000px;
@@ -311,6 +400,10 @@ p {
     opacity: .8;
     margin-top: 0px;
     padding: 10px 0px 60px 0px; 
+}
+
+.lesson-content-text {
+    font-family: 'noto sans', sans serif;
 }
 
 .footer-text {
