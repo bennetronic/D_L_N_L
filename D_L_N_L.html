@@ -18,9 +18,7 @@
             <div id="menubar_top">
 
                 <div class="socials">
-                    <a class="facebook" target="_blank" href="http://facebook.com">
-                        <img class="fb" src="images/placeholders/40x40.png" />
-                    </a>
+                    <a class="facebook" target="_blank" href="http://facebook.com"><img class="fb" src="images/placeholders/40x40.png" /></a>
                 </div>
                 <div class="socials">
                     <a class="twitter" target="_blank" href="http://twitter.com">
@@ -66,28 +64,31 @@
         <!-- NAVIGATION OPTIONS -->
         <!-- heading_exams content -->       
         
-        <div id="options">
-            <a href="#heading_lessons">
-                <div id="option1">
-                    <h3>Lessons</h3>
+        <div class="page-container">
+            <div id="options">
+                <a href="#heading_lessons">
+                    <div id="option1">
+                        <h3>Lessons</h3>
                         <p>What to expect in your Drum Lessons.</p>
-                            <a href="heading_lessons" class="option-hrefs">Learn More</a>
-                </div>
-            </a>
-            <a href="#">
-                <div id="option2">
-                    <h3>Exams</h3>
-                        <p>Pass your Rockschool Drum Grades with our 100% Pass Rate.</p>
-                            <a href="heading_exams" class="option-hrefs">Learn More</a>
-                </div>
-            </a>
-            <a href="#heading_prices">
-                <div id="option3">
-                    <h3>Prices</h3>
-                        <p>A Range of Excellent value for money options.</p>
-                            <a href="heading_exams" class="option-hrefs">Learn More</a>
-                </div>
-            </a>
+                        <p>And blah blah</p>
+                                <a href="heading_lessons" class="option-hrefs">Learn More</a>
+                    </div>
+                </a>
+                <a href="#">
+                    <div id="option2">
+                        <h3>Exams</h3>
+                            <p>Pass your Rockschool Drum Grades with our 100% Pass Rate.</p>
+                                <a href="heading_exams" class="option-hrefs">Learn More</a>
+                    </div>
+                </a>
+                <a href="#heading_prices">
+                    <div id="option3">
+                        <h3>Prices</h3>
+                            <p>A Range of Excellent value for money options.</p>
+                                <a href="heading_exams" class="option-hrefs">Learn More</a>
+                    </div>
+                </a>
+            </div>
         </div>
         
 <!-- LESSONS -->
@@ -106,7 +107,7 @@
                 <h4 id="exams">Exams</h4>
             </div> -->
             
-            <div class="page-container">
+            <div class="page-container" id="lessons-container">
                 <div class="lesson-tab-bar">
                     
                     <button class="tablinks" onclick="openLevel(event, 'Beginner')"><h4 id="beginners">Beginners</h4></button>
@@ -147,6 +148,10 @@
         <div id="prices_container">
             <div>
                 <table id="table_prices">
+                    <tr>
+                        <th>Time</th>
+                        <th>Cost</th>
+                    </tr>
                     <tr>
                         <td><h4>30mins</h4><br><span class="prices-text"><i>(Recommended for students up to the age of 14 or Grade 2).</i></span></td>
                         <td class="sterling">£25</td>
