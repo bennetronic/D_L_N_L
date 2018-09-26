@@ -68,14 +68,15 @@ body {
     overflow: auto;
 }
 
-#menubar_top .socials .facebook .fb {
-    background: url(images/social-media-logo-set1.png) 0px 0px;
+/*.page-container #menubar_top .socials .facebook */ .fb {
+    background: url(images/social-media-logo-set1.png) -25px -25px;
     width: 40px;
     height: 40px;
+    display: block;
 }
 
-#menubar_top .socials .facebook .fb:hover {
-    background: url(images/social-media-logo-set1.png) 0px 0px;
+/*.page-container #menubar_top .socials*/ .fb:hover {
+    background: url(images/social-media-logo-set1.png) -55px -55px;
 }
 
 /*  SUBMENU  --->  */
