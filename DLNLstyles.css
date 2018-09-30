@@ -188,7 +188,7 @@ body {
 
 /* OPTIONS <--- */
 
-/* LESSONS ---> */
+/* LESSONS 1 ---> */
 
 #heading_lessons {
     width:1000px;
@@ -288,7 +288,109 @@ body {
     border-top: none;
 }
 
-/* LESSONS <--- */
+/* LESSONS 1 <--- */
+
+/* LESSONS 2 --> */
+
+.beginner-wrapper {
+    display: block;
+    max-width: 1000px;
+}
+
+#beginner-image {
+    width: 50%;
+    max-width: 498px;
+    min-width: 330px;
+    height: 250px;
+    display: inline-block;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid black;
+    position: ;
+}
+
+#advanced-image {
+    width: 50%;
+    max-width: 498px;
+    min-width: 330px;
+    height: 250px;
+    display: inline-block;
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid black;
+}
+
+#exam-image {
+    width: 50%;
+    max-width: 498px;
+    min-width: 330px;
+    height: 250px;
+    display: inline-block;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid black;
+}
+
+#beginner-text {
+    border:1px solid black;
+    width: 50%;
+    max-width: 498px;
+    min-width: 330px;
+    height: 250px;
+    display: inline;
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    position: ;
+}
+
+#advanced-text {
+    border:1px solid black;
+    width: 50%;
+    max-width: 498px;
+    min-width: 330px;
+    height: 250px;
+    display: inline;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+}
+
+#exams-text {
+    border:1px solid black;
+    width: 50%;
+    max-width: 498px;
+    min-width: 330px;
+    height: 250px;
+    display: inline;
+    float: right;
+    padding: 0px;
+    margin: 0px;
+}
+
+.lessons-images {
+    width: 300px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+.lesson-text {
+    margin: 0px auto 0px auto;
+
+}
+
+#beginner-text, #advanced-text, #exams-text {
+    max-height: 250px;
+    overflow: hidden;
+}
+
+/* <-- LESSONS 2 */
 
 /* PRICES 1 --> */
 
@@ -432,17 +534,19 @@ label {
 
 .main-heading {
     display: inline-block;
-    width:1000px;
+    width: 100%;
+    min-width: 600px
+    max-width:1000px;
     height: 20px;
     margin: 0px auto 0px auto;
    
 }
 
 h2 {
-    font-family: 'noto sans', sans serif;
-    font font-size: 3em;
+    font-family: 'open sans', sans serif;
+    font-size: 1.5em;
     color: grey;
-    -webkit- font-kerning: em;
+    letter-spacing: 3px;
     /* border-top: 1px solid black;
     border-bottom: 1px solid black; */
     padding: 5px 0px 5px 0px;
@@ -450,10 +554,11 @@ h2 {
 }
 
 h3 {
-    font-family: 'noto sans', sans-serif;
+    font-family: 'open sans condensed', sans-serif;
     color: red;
     text-align: center;
     font-size: 2em;
+    letter-spacing: 2px;
     background-color: white;
     opacity: .8;
     /*line-height: 50px;*/
@@ -472,7 +577,8 @@ h4 {
 }
 
 p {
-    font-family: 'noto sans', sans-serif;
+    font-family: 'open sans', sans-serif;
+    font-weight: lighter;
     color: black;
     text-align: center;
     background-color: white;
